@@ -1,0 +1,14 @@
+bin
+build
+config
+data
+dist
+dist_diff
+node_modules
+public
+resources
+bash
+static
+screenshot
+src/libs/
+src/assets/

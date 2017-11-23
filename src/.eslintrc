@@ -1,0 +1,14 @@
+{
+  "globals": {
+    "axios": true,
+    "echarts": true,
+    "throttle": true,
+    "CircleProgress": true,
+    "Counter": true,
+    "Scroller": true,
+    "DatetimePicker": true,
+    "Poppicker": true,
+    "Indicator": true,
+    "toast": true
+  }
+}
