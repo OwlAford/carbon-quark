@@ -9,9 +9,8 @@ module.exports = {
     extJS: [
       '//webapi.amap.com/maps?v=1.4.0&key=f582aead07ca97967fea0637d51e98ac',
       'core.min.js',
-      // 'shim/es5-shim.min.js',
-      // 'shim/es6-shim.min.js',
-      // 'shim/fetch.min.js'
+      'https://cdn.bootcss.com/echarts/3.7.1/echarts.simple.min.js',
+      'https://cdn.bootcss.com/axios/0.17.1/axios.min.js'
     ],
     index: resolve('dist/index.html'),
     assetsRoot: resolve('dist'),
@@ -30,7 +29,9 @@ module.exports = {
     env: env.dev,
     extJS: [
       '//webapi.amap.com/maps?v=1.4.0&key=f582aead07ca97967fea0637d51e98ac',
-      'core.min.js'
+      'core.min.js',
+      'https://cdn.bootcss.com/echarts/3.7.1/echarts.simple.min.js',
+      'https://cdn.bootcss.com/axios/0.17.1/axios.min.js'
     ],
     port: 3000,
     lint: true,
