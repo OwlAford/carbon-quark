@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppFooter from '^/layouts/Footer'
+import AppFooter from '^/Footer'
 
 export default {
   name: 'main',

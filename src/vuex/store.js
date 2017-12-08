@@ -4,7 +4,6 @@ import createLogger from 'vuex/dist/logger'
 import { state, mutations } from './mutations'
 import * as actions from './actions'
 import * as getters from './getters'
-import channel from './modules/channel'
 
 Vue.use(Vuex)
 
@@ -31,8 +30,5 @@ export default new Vuex.Store({
   mutations,
   getters,
   actions,
-  modules: {
-    channel
-  },
   strict: debug
 })

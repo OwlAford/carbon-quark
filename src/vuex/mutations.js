@@ -1,16 +1,16 @@
 export const state = {
   loginState: false,
-  userInfo: {}
+  userName: '未命名'
 }
 
 export const mutations = {
   login (state, val) {
     state.loginState = true
-    state.userInfo = val
+    state.userName = val || '未命名'
   },
 
   logout (state, val) {
     state.loginState = false
-    state.userInfo = {}
+    state.userName = '未命名'
   }
 }

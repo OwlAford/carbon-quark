@@ -3,30 +3,17 @@
 </template>
 
 <script>
-import { getCookie } from '~/utils/cookie'
-
 export default {
   name: 'redirect',
   data () {
     return {
-      message: ''
+      message: '页面即将跳转...'
     }
   },
   beforeMount () {
-    const { $router, $route } = this
-    const userInfo = getCookie('userinfo')
-    if (!userInfo) {
-      this.message = '登录已失效，请先登录！'
-      this.backTimer = setTimeout(() => {
-        $router.replace('/login')
-      }, 3000)
-    } else {
-      if ('path' in $route.query) {
-        $router.replace($route.query.path)
-      } else {
-        $router.replace('/main/home')
-      }
-    }
+    this.backTimer = setTimeout(() => {
+      this.$router.replace('/login')
+    }, 3000)
   },
   beforeDestroy () {
     clearTimeout(this.backTimer)

@@ -64,12 +64,6 @@ module.exports = {
     filename: '[name].js',
     publicPath: settings[env].assetsPublicPath
   },
-  externals: {
-    'vue': 'window.vue',
-    'vuex': 'window.vuex',
-    'vue-router': 'window.vueRouter',
-    'vuex-router-sync': 'window.vuexRouterSync'
-  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {

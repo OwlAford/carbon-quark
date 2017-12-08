@@ -2,14 +2,7 @@ import Login from '@/Login'
 import Main from '@/Main'
 import Redirect from '@/Redirect'
 
-import Home from '@/Home/Async'
-import Asset from '@/Asset/Async'
-import Channel from '@/Channel/Async'
-import Center from '@/Center/Async'
-
-import Gyro from '@/Gyro/Async'
-import Maps from '@/Map/Async'
-import Scroll from '@/Scroll/Async'
+import Home from '@/Home'
 
 export default [{
   path: '/login',
@@ -24,23 +17,8 @@ export default [{
     path: 'home',
     component: Home
   }, {
-    path: 'asset',
-    component: Asset
-  }, {
-    path: 'channel',
-    component: Channel
-  }, {
-    path: 'center',
-    component: Center
-  }, {
-    path: 'gyro',
-    component: Gyro
-  }, {
-    path: 'map',
-    component: Maps
-  }, {
-    path: 'scroll',
-    component: Scroll
+    path: 'state',
+    component: () => import('@/State' /* webpackChunkName: 'state' */)
   }]
 }, {
   path: '/redirect',

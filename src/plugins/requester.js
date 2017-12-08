@@ -1,5 +1,3 @@
-import { indicator } from './indicator'
-
 export const Axios = axios.create({
   baseURL: '/',
   timeout: 10000,
@@ -15,27 +13,26 @@ Axios.interceptors.response.use(res => {
 
   switch (status) {
     case 403:
-      toast('错误403', 'bottom')
+      alert('错误403')
       return null
 
     case 404:
-      toast('错误404', 'bottom')
+      alert('错误404')
       return null
 
     case 500:
-      toast('错误500', 'bottom')
+      alert('错误500')
       return null
 
     case 502:
-      toast('错误502', 'bottom')
+      alert('错误502')
       return null
 
     default:
       return res
   }
 }, err => {
-  indicator.close()
-  toast('数据请求发生错误，请检查网络！', 'bottom', 5000)
+  alert('数据请求发生错误，请检查网络！')
   return Promise.reject(err)
 })
 
