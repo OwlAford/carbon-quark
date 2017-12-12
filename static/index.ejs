@@ -37,6 +37,9 @@
   })();
 </script>
 <%}%>
+<% for(var i = 0; i < htmlWebpackPlugin.options.extCSS.length; i++) {%>
+  <script src='<%= htmlWebpackPlugin.options.extCSS[i] %>'></script>
+<%}%>
 <% for(var i = 0; i < htmlWebpackPlugin.options.extJS.length; i++) {%>
   <script src='<%= htmlWebpackPlugin.options.extJS[i] %>'></script>
 <%}%>
