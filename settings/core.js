@@ -6,6 +6,7 @@ const resolve = dir => path.join(__dirname, '..', dir)
 module.exports = {
   build: {
     env: env.prod,
+    extCSS: [],
     extJS: [
       'https://cdn.bootcss.com/axios/0.17.1/axios.min.js'
     ],
@@ -24,6 +25,7 @@ module.exports = {
   },
   dev: {
     env: env.dev,
+    extCSS: [],
     extJS: [
       'https://cdn.bootcss.com/axios/0.17.1/axios.min.js'
     ],

@@ -9,6 +9,9 @@
 <%if(htmlWebpackPlugin.options.isMobile){%>
 <script>var setClient = function () { var e = document.documentElement, t = e.clientWidth; e.style.fontSize = 100 * t / 750 + "px" }; setClient(), window.addEventListener("resize", setClient, !1);</script>
 <%}%>
+<% for(var i = 0; i < htmlWebpackPlugin.options.extCSS.length; i++) {%>
+  <script src='<%= htmlWebpackPlugin.options.extCSS[i] %>'></script>
+<%}%>
 <% for(var i = 0; i < htmlWebpackPlugin.options.extJS.length; i++) {%>
   <script src='<%= htmlWebpackPlugin.options.extJS[i] %>'></script>
 <%}%>
