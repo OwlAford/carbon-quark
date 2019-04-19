@@ -3,7 +3,7 @@ const chalk = require("chalk");
 const resolve = dir => path.join(__dirname, dir);
 
 module.exports = {
-  publicPath: "/starry/",
+  publicPath: "/",
   productionSourceMap: false,
   configureWebpack: {
     resolve: {
