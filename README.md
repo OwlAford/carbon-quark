@@ -24,7 +24,7 @@ npm install
 ``` bash
 # serve with hot reload at localhost
 
-npm run dev
+npm run serve
 ```
 
 ``` bash
@@ -40,21 +40,13 @@ npm run build --report
 ```
 
 ``` bash
-# serve with static files at localhost
-
-# if you want to automatically open the browser adds the [--opn] for the current command line
-
-npm run dist-server --opn
-```
-
-``` bash
 # run unit tests
 
-npm run unit
+npm run test:unit
 ```
 
 ``` bash
-# run all tests
+# run e2e tests
 
-npm test
+npm run test:e2e
 ```
