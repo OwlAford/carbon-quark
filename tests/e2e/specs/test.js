@@ -1,8 +1,8 @@
 // https://docs.cypress.io/api/introduction/api.html
 
-describe("My First Test", () => {
-  it("Visits the app root url", () => {
-    cy.visit("/");
-    cy.contains("h1", "Welcome to Your Vue.js App");
+describe("测试登录页", () => {
+  it("访问登录页", () => {
+    cy.visit("/#/login");
+    cy.contains(".title", "分析管理系统");
   });
 });

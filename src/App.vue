@@ -1,28 +1,44 @@
 <template lang="pug">
   #app
-    #nav
-      router-link(to="/") Home
-      span |
-      router-link(to="/about") About
     router-view
 </template>
 
 <style lang="scss">
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #202123;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background-color: rgba(0, 0, 0, 0.64);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  background: #202123;
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "SF Pro SC", "SF Pro Text", "SF Pro Icons",
+    "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  color: #333;
+  font-size: 12px;
 }
 </style>

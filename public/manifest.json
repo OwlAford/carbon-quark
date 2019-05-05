@@ -1,6 +1,6 @@
 {
-  "name": "quark-cli",
-  "short_name": "quark-cli",
+  "name": "carbon-quark",
+  "short_name": "carbon-quark",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

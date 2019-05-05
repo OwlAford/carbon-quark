@@ -1,0 +1,12 @@
+sips -z 192 192     logo.png --out public/img/icons/android-chrome-192x192.png
+sips -z 512 512     logo.png --out public/img/icons/android-chrome-512x512.png
+sips -z 60 60       logo.png --out public/img/icons/apple-touch-icon-60x60.png
+sips -z 76 76       logo.png --out public/img/icons/apple-touch-icon-76x76.png
+sips -z 120 120     logo.png --out public/img/icons/apple-touch-icon-120x120.png
+sips -z 152 152     logo.png --out public/img/icons/apple-touch-icon-152x152.png
+sips -z 180 180     logo.png --out public/img/icons/apple-touch-icon-180x180.png
+sips -z 180 180     logo.png --out public/img/icons/apple-touch-icon.png
+sips -z 16 16       logo.png --out public/img/icons/favicon-16x16.png
+sips -z 32 32       logo.png --out public/img/icons/favicon-32x32.png
+sips -z 144 144     logo.png --out public/img/icons/msapplication-icon-144x144.png
+sips -z 150 150     logo.png --out public/img/icons/mstile-150x150.png

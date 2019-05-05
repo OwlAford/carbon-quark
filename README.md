@@ -1,15 +1,4 @@
 # carbon-quark
-[![GitHub watchers](https://img.shields.io/github/watchers/OwlAford/carbon-quark.svg)](https://github.com/OwlAford/carbon-quark)
-[![issues](https://img.shields.io/github/issues/OwlAford/carbon-quark.svg)](https://github.com/OwlAford/carbon-quark)
-[![forks](https://img.shields.io/github/forks/OwlAford/carbon-quark.svg)](https://github.com/OwlAford/carbon-quark)
-[![stars](https://img.shields.io/github/stars/OwlAford/carbon-quark.svg)](https://github.com/OwlAford/carbon-quark)
-[![downloads](https://img.shields.io/github/downloads/OwlAford/carbon-quark/total.svg)](https://github.com/OwlAford/carbon-quark)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/OwlAford/carbon-quark)
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/OwlAford/carbon-quark)
-
-
-[![GitHub followers](https://img.shields.io/github/followers/OwlAford.svg?style=social&label=Follow)](https://github.com/OwlAford)
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/Aford79872215)
 
 >  🚀 A Lite Web Application Scaffolding
 

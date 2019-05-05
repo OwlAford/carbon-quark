@@ -1,0 +1,170 @@
+.page-login {
+  font-size: 14px;
+
+  .bg,
+  #particles-mask {
+    width: 100%;
+    height: 100%;
+
+    canvas,
+    #particles-mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .maskCanvasBg {
+      opacity: 1;
+      transition: opacity 0.6s;
+
+      &.hide {
+        opacity: 0;
+      }
+    }
+  }
+
+  .img-source {
+    display: none;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+
+    &:before {
+      content: "";
+      height: 28px;
+      width: 28px;
+      background: url(../../assets/img/brand.png) no-repeat;
+      background-size: 100% auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: -2px 10px 0 0;
+    }
+  }
+
+  .login-box {
+    width: 480px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -175px 0 0 -240px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    .inner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+      left: 0;
+      top: 0;
+      padding: 40px 40px 0 40px;
+
+      .ipt {
+        padding: 10px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.068);
+        border-radius: 4px;
+        color: #fff;
+        margin-bottom: 15px;
+        position: relative;
+
+        .safe-code {
+          width: 86px;
+          height: 28px;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          margin-top: -14px;
+        }
+
+        i.anticon {
+          font-size: 20px;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        input {
+          outline: none;
+          border: none;
+          background: none;
+          color: #fff;
+          padding: 5px 10px;
+          width: 345px;
+
+          &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.4);
+          }
+        }
+      }
+    }
+
+    .login-btn {
+      cursor: pointer;
+      display: block;
+      margin-top: 30px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      background-color: rgb(255, 105, 5);
+      padding: 15px 20px;
+      border-radius: 4px;
+      transition: all .3s;
+
+      &:hover {
+        background-color: #d65702;
+      }
+
+      .anticon {
+        display: none;
+      }
+
+      &:after {
+        content: "登 录";
+        text-shadow: 0 1px #d65702;
+      }
+
+      &.loading {
+        background-color: #1890ff;
+        cursor: not-allowed;
+
+        &:after {
+          content: "";
+        }
+
+        .anticon-loading {
+          display: inline-block;
+          font-size: 20px;
+        }
+      }
+
+      &.success {
+        background-color: #1ecd97;
+        position: relative;
+        overflow: hidden;
+        border-radius: 26px;
+        cursor: not-allowed;
+
+        &:after {
+          content: "";
+        }
+
+        .anticon-check {
+          display: inline-block;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
