@@ -163,8 +163,24 @@
         .anticon-check {
           display: inline-block;
           font-size: 20px;
+
+          .st0 {
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 30;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 489;
+            stroke-dashoffset: 489;
+            animation: drawPath ease 0.6s both;
+          }
         }
       }
     }
+  }
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
   }
 }

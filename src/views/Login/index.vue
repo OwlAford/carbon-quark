@@ -28,7 +28,10 @@
             img(:src="checkCodeSrc" width="86" height="28")
         .login-btn(@click="submit" :class="btnStatus")
           a-icon(type="loading")
-          a-icon(type="check")
+          i.anticon.anticon-check
+            <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" viewBox="0 0 359.64 260.21" style="enable-background:new 0 0 359.64 260.21;" xml:space="preserve">
+              <polyline class="st0" points="7.07,139.57 113.57,246.07 352.57,7.07"/>
+            </svg>
 </template>
 
 <style lang="scss" src="./index.scss"></style>
