@@ -1,6 +1,5 @@
-const path = require("path");
 const chalk = require("chalk");
-const resolve = dir => path.join(__dirname, dir);
+const proxyLog = require("debug")("proxy");
 
 module.exports = {
   pwa: {
@@ -12,31 +11,14 @@ module.exports = {
   },
   publicPath: "/",
   productionSourceMap: false,
-  configureWebpack: {
-    resolve: {
-      alias: {
-        "~": resolve("src/assets")
-      }
-    },
-    module: {
-      rules: [
-        {
-          test: /\.pug$/,
-          loader: "pug-plain-loader"
-        }
-      ]
-    }
-  },
   devServer: {
     proxy: {
       "/inmanage_lb": {
         target: "http://flameapp.cn",
         changeOrigin: true,
-        onProxyReq: proxyReq => {
-          console.log(
-            `[${chalk.gray("proxy")}]: ` +
-              `${chalk.cyanBright(proxyReq.method)} ` +
-              `${chalk.yellowBright(proxyReq.path)}`
+        onProxyReq: ({ method, path }, req, { statusCode }) => {
+          proxyLog(
+            `${chalk.cyanBright(method)} ${chalk.yellow(statusCode)} ${path}`
           );
         }
       }
