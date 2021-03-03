@@ -45,7 +45,7 @@
     "debug": "^4.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "sass": "^1.20.1",
     "sass-loader": "^7.1.0",
